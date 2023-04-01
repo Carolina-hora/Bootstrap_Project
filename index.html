@@ -16,7 +16,8 @@
 
 <body>
 	<div class="container-fluid">
-		<nav class="d-flex flex-wrap p-3 mb-4 bg-light navbar navbar-expand-md navbar-expand-lg">
+		<!-- by using navbar-expand-md navbar-expand-lg we are defining that the hamburger icon will only be visible for small screens -->
+		<nav class="d-flex flex-wrap p-2 mb-2 bg-light navbar navbar-expand-md navbar-expand-lg">
 			<a class="navbar-brand" href="/"
 				class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
 				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
@@ -33,8 +34,8 @@
 			<div class="collapse navbar-collapse justify-content-md-end justify-content-sm-center justify-content-lg-end"
 				id="navbarNav">
 
-				<div class="col-sm-6 col-md-4 col-lg-3">
-
+				<div class="d-inline-flex">
+					<!-- button that triggers the modal -->
 					<button type="button" class="btn btn-success justify-content-center" data-bs-toggle="modal"
 						data-bs-target="#exampleModal">
 						Create a new post
@@ -79,15 +80,16 @@
 							</div>
 						</div>
 					</div>
-
 					
+					<!-- the ms-2 is creating the space between both buttons -->
+					<div class="dropdown ms-2">
 						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
 							data-bs-toggle="dropdown" aria-expanded="false">
 							<i class="fa-solid fa-gear"></i>
 						</button>
 
-
-						<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2" style="">
+						<!-- The dropdown-menu-end makes changes the side it opens; we can also choose dropdown-menu-start -->
+						<ul class="dropdown-menu dropdown-menu-end text-small shadow">
 							<li><a class="dropdown-item" href="#">Profile</a></li>
 							<li><a class="dropdown-item" href="#">Accessibility</a></li>
 							<li><a class="dropdown-item" href="#">Privacy and Data</a></li>
@@ -97,7 +99,7 @@
 							<li><a class="dropdown-item text-danger" href="#">Log out</a></li>
 						</ul>
 
-
+					</div>
 				
 				</div>
 
